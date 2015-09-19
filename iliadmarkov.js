@@ -29,7 +29,7 @@ lines.forEach(function(line, index){
                markov_table[last_word].link_sum = 1;
             }else{
                markov_table[last_word][word] ++; //Increase the likelihood that *word* will follow after *last_word*
-               markov_table[last_word].link_sum = 1;
+               markov_table[last_word].link_sum ++;
             }
          }
       }
